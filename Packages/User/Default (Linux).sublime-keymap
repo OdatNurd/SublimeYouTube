@@ -1,0 +1,156 @@
+[
+    // Toggle the Terminus panel; if it's not already open, it will open on the
+    // folder of the current file.
+    {
+        "keys": ["alt+`"],
+        "command": "toggle_terminus_panel",
+        "args": {
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+
+    // Open the Command Palette focused on OverrideAudit commands
+    {
+        "keys": ["ctrl+alt+o"],
+        "command": "show_overlay",
+        "args": {
+            "overlay": "command_palette",
+            "text" : "OverrideAudit: "
+        }
+    },
+
+    // Open the GitSavvy status window for kicking off potential source control
+    // operations.
+    {
+        "keys": ["ctrl+alt+shift+a"],
+        "command": "gs_show_status"
+    },
+
+    // This runs the 12th sublimerge macro by index. Indexes start at 0 and
+    // count the default macros before the user macros.
+    {
+        "keys": ["ctrl+alt+shift+d"],
+        "command": "sublimerge_macro",
+        "args": {
+            "run": 12
+        }
+    },
+
+    // Simulate a double click event at the cursor location while inside of a
+    // Find in Files result; see double_clicker.py
+    {
+        "keys": ["enter"],
+        "command": "double_click_at_caret",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "text.find-in-files", "match_all": true },
+        ],
+    },
+
+    // When commenting out the current line, advance the cursor forward to the
+    // next line.
+    {
+        "keys": ["ctrl+/"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/comment_line.sublime-macro"
+        },
+        "context": [
+            { "key": "selection_empty", "operator": "equal", "operand": "true", "match_all": true }
+        ]
+    },
+
+    // By default on Linux these are bound to "alt+/"; this mimics the binding
+    // as seen on Windows.
+    { "keys": ["ctrl+space"], "command": "auto_complete" },
+    { "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },
+
+    ///////////////////
+    // These key bindings apply to comments and will continue them onto the next
+    // line and allow for joining comment lines together. See wrap_text.py.
+    ///////////////////
+    { "keys": ["enter"], "command": "continue_comment_on_next_line", // when on a block comment line with an asterisk on it already, ST will keep the space before it when pressing <kbd>Enter</kbd>, so we just need to insert another asterisk
+        "args": {
+            "insert_what": "*",
+        },
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "comment.block - comment.block.documentation - (text - text source)", "match_all": true },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "preceding_text", "operator": "not_regex_contains", "operand": "/\\*|\\*/$|^$", "match_all": true },
+        ],
+    },
+
+    { "keys": ["keypad_enter"], "command": "continue_comment_on_next_line", // when on a block comment line with an asterisk on it already, ST will keep the space before it when pressing <kbd>Enter</kbd>, so we just need to insert another asterisk
+        "args": {
+            "insert_what": "*",
+        },
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "comment.block - comment.block.documentation - (text - text source)", "match_all": true },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "preceding_text", "operator": "not_regex_contains", "operand": "/\\*|\\*/$|^$", "match_all": true },
+        ],
+    },
+
+
+    { "keys": ["enter"], "command": "continue_comment_on_next_line", // when on a block comment line without an asterisk on it already - i.e. the opening /* line, we need to insert a space and an asterisk when the user presses <kbd>Enter</kbd>
+        "args": {
+            "insert_what": " *",
+        },
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "comment.block - comment.block.documentation - (text - text source)", "match_all": true }, // don't trigger for XML, HTML (/ Markdown) or other syntaxes unless in an embedded source scope inside Markdown for example
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "/\\*", "match_all": true },
+            { "key": "preceding_text", "operator": "not_regex_contains", "operand": "\\*/$|^$", "match_all": true },
+        ],
+    },
+
+    { "keys": ["keypad_enter"], "command": "continue_comment_on_next_line", // when on a block comment line without an asterisk on it already - i.e. the opening /* line, we need to insert a space and an asterisk when the user presses <kbd>Enter</kbd>
+        "args": {
+            "insert_what": " *",
+        },
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "comment.block - comment.block.documentation - (text - text source)", "match_all": true }, // don't trigger for XML, HTML (/ Markdown) or other syntaxes unless in an embedded source scope inside Markdown for example
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "/\\*", "match_all": true },
+            { "key": "preceding_text", "operator": "not_regex_contains", "operand": "\\*/$|^$", "match_all": true },
+        ],
+    },
+
+
+    { "keys": ["enter"], "command": "continue_comment_on_next_line",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "comment.line, comment.block.documentation.cs", "match_all": true },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "preceding_text", "operator": "not_regex_contains", "operand": "^$", "match_all": true },
+        ],
+    },
+
+    { "keys": ["keypad_enter"], "command": "continue_comment_on_next_line",
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "comment.line, comment.block.documentation.cs", "match_all": true },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "preceding_text", "operator": "not_regex_contains", "operand": "^$", "match_all": true },
+        ],
+    },
+
+    { "keys": ["delete"], "command": "join_line_below",
+        "context": [
+            { "key": "following_text", "operator": "regex_match", "operand": "$", "match_all": true },
+            { "key": "preceding_text", "operator": "not_regex_match", "operand": "^", "match_all": true },
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            //{ "key": "selector", "operator": "equal", "operand": "comment", "match_all": true },
+        ],
+    },
+
+    { "keys": ["ctrl+j"], "command": "join_line_below",
+        "context": [
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "comment.line", "match_all": true },
+        ]
+    },
+]

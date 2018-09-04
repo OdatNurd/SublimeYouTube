@@ -1,0 +1,5 @@
+[
+    { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Word Wrap", "mnemonic": "W", "checkbox": true },
+
+    { "caption": "-", "id": "end" },
+]

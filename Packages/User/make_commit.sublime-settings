@@ -1,0 +1,7 @@
+// These settings override both User and Default settings for the make_commit syntax
+{
+
+    "word_wrap": false,
+    "spell_check": true,
+    "spelling_selector": "git-savvy.make-commit - comment - meta",
+}

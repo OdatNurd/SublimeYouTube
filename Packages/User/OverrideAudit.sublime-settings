@@ -1,0 +1,32 @@
+{
+    // A list of packages whose overrides should be ignored when it comes to
+    // displaying them.
+    "ignore_overrides_in": [
+        "Sublimerge 3"
+    ],
+
+    // What to do when an override diff indicates that the override is identical
+    // to the underlying file. Possible values for this setting are "ignore" to
+    // do nothing, "diff" to open a view and indicate that there are no changes
+    // or "open" to open the override as a regular file, allowing you to view or
+    // modify it.
+    //
+    // This setting only applies to the Diff Single Override option; when
+    // performing a diff via a context menu, OverrideAudit acts as if this
+    // is set to "diff".
+    "diff_unchanged": "open",
+
+    // Normally when a diff is performed and two files compare as equal, the
+    // diff result contains only text to tell you this. This option controls
+    // whether, in this situation, a diff header should be applied to the result
+    // of the diff even when the diff is empty.
+    "diff_empty_hdr": true,
+
+    // When set to true, switching from an edit of an override to a diff of it
+    // will make sure that any unsaved changes are saved to disk before the
+    // diff is created or refreshed.
+    //
+    // This option will not save a file that no longer exists on disk but still
+    // has a buffer open.
+    "save_on_diff": true,
+}

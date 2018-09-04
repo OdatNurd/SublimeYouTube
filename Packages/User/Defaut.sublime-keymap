@@ -1,0 +1,14 @@
+[
+    // Use our own buzzword lorem ipsum generator. It generates buzzword lorem
+    // using a rolling stock of 5 paragraphs and lets you generate multiple
+    // items at once.
+    {
+        "keys": ["tab"],
+        "command": "buzzword_ipsum",
+        "context": [
+            { "key": "selection_empty", "operator": "equal", "operand": "true", "match_all": true },
+            { "key": "preceding_text", "operator": "regex_match", "operand": "^.*lorem\\d*$", "match_all": true },
+            { "key": "following_text", "operator": "regex_match", "operand": "^$", "match_all": true },
+        ]
+    },
+]

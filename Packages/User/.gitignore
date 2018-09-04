@@ -1,0 +1,13 @@
+Terminus/
+GitSavvy/
+Package Control.cache/
+Package Control.last-run
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+Package Control.system-ca-bundle
+oscrypto-ca-bundle.crt
+Sublimerge Macros.sublime-commands
+Sublimerge.sublime-color-scheme
+SublimergeSummaryPanel.tmTheme
+SublimergeSummaryPanel.sublime-color-scheme
+OverrideAudit.status

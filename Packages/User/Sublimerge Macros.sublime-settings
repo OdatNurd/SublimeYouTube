@@ -1,0 +1,70 @@
+{
+    "macros_user": [
+        {
+            // What it's named in the list
+            "name": "Show Uncommited Changes (Current File)",
+
+            // This command is only available when the current project is under
+            // git control.
+            "requires": "git",
+
+            // Do things in this order
+            "steps":
+            [
+                // Query git to see if this file is actually modified or not.
+                {
+                    "capture":
+                    {
+                        "name": "modified_file",
+                        "execute":
+                        {
+                            "command": "${git} status --porcelain --untracked-files=no \"${CURRENT:FILE|repopath}\"",
+                            "directory": "${CURRENT:REPO_ROOT}",
+                        },
+                        "regexp": "^\\s+M\\s+\"?(.*?)\"?$",
+                        "value": "@1",
+                        "empty_message": "Current file is untracked or has no changes"
+                    }
+                },
+
+                // Now we can define the full path to files on either side of
+                // the diff. The file on the left is extracted from git into
+                // a temporary file.
+                {
+                    "define":
+                    {
+                        "right_file": "${CURRENT:REPO_ROOT}/${modified_file}",
+                        "left_file": "${ENV:TEMP_DIR}/${modified_file|basename}@HEAD"
+                    }
+                },
+
+                // Actually do the compare; this pulls the current head version
+                // of the current file from git and stashed it inside a temp
+                // file.
+                {
+                    "compare":
+                    {
+                        "execute":
+                        {
+                            "command": "${git} show HEAD:\"./${modified_file}\" > \"${left_file}\"",
+                            "directory": "${CURRENT:REPO_ROOT}"
+                        },
+
+                        // Mark this file as temporary so that it gets removed.
+                        "left":
+                        {
+                            "file": "${left_file}",
+                            "temporary": true
+                        },
+
+                        "right":
+                        {
+                            "file": "${right_file}",
+                            "temporary": false
+                        }
+                    }
+                }
+            ]
+        },
+    ]
+}

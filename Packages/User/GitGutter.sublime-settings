@@ -1,0 +1,6 @@
+// GitGutter Settings - User
+{
+  // Live mode evaluates changes every time file is modified,
+  // Set false to disable evaluation after each input
+  "live_mode": false,
+}

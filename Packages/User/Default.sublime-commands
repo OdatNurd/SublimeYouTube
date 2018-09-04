@@ -1,0 +1,33 @@
+[
+    { "caption": "Developer: New Plugin...",      "command": "new_plugin"},
+    { "caption": "Developer: New Snippet...",     "command": "new_snippet"},
+    { "caption": "Developer: New Syntax...",      "command": "new_syntax"},
+
+    { "caption": "Project: Quick Switch", "command": "prompt_select_workspace" },
+    { "caption": "Project: Open",         "command": "prompt_open_project_or_workspace" },
+
+    { "caption": "Paste from History",        "command": "paste_from_history" },
+    { "caption": "Trim Trailing White Space", "command": "trim_trailing_white_space" },
+
+    { "caption": "Scratch Buffer: Plain Text",        "command": "scratch_buffer", "args": {"syntax": "Packages/Text/Plain text.tmLanguage"}},
+    { "caption": "Scratch Buffer: Markdown",          "command": "scratch_buffer", "args": {"syntax": "Packages/Markdown/Markdown.sublime-syntax"}},
+    { "caption": "Scratch Buffer: HTML",              "command": "scratch_buffer", "args": {"syntax": "Packages/HTML/HTML.sublime-syntax"}},
+    { "caption": "Scratch Buffer: JavaScript",        "command": "scratch_buffer", "args": {"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"}},
+    { "caption": "Scratch Buffer: JSON",              "command": "scratch_buffer", "args": {"syntax": "Packages/JavaScript/JSON.sublime-syntax"}},
+    { "caption": "Scratch Buffer: Python",            "command": "scratch_buffer", "args": {"syntax": "Packages/Python/Python.sublime-syntax"}},
+    { "caption": "Scratch Buffer: TypeScript",        "command": "scratch_buffer", "args": {"syntax": "Packages/TypeScript/TypeScript.tmLanguage"}},
+    { "caption": "Scratch Buffer: Prompt for Syntax", "command": "scratch_buffer"},
+
+    { "caption": "Clear Console", "command": "clear_console" },
+
+    { "caption": "File Manager: New File Relative to Current View", "command": "fm_create", "args": { "initial_text": "$here/" } },
+
+    { "caption": "Docs: Official",      "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/"} },
+    { "caption": "Docs: Unoffical",     "command": "open_url", "args": {"url": "http://docs.sublimetext.info/en/latest/"} },
+    { "caption": "Docs: API Reference", "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/api_reference.html"} },
+
+    { "caption": "Toggle Logging: Commands",      "command": "toggle_sublime_logging", "args": {"log_type": "log_commands"} },
+    { "caption": "Toggle Logging: Input",         "command": "toggle_sublime_logging", "args": {"log_type": "log_input"} },
+    { "caption": "Toggle Logging: Result Regex",  "command": "toggle_sublime_logging", "args": {"log_type": "log_result_regex"} },
+    { "caption": "Toggle Logging: Build Systems", "command": "toggle_sublime_logging", "args": {"log_type": "log_build_systems"} },
+]

@@ -1,0 +1,5 @@
+[
+    { "caption": "-" },
+    { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Word Wrap", "mnemonic": "W", "checkbox": true },
+    { "command": "clear_console" },
+]
