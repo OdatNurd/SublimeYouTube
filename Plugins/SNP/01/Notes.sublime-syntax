@@ -1,0 +1,16 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+file_extensions:
+  - notes
+scope: text.plain.notes
+contexts:
+  main:
+    - match: '^\s*(#\w+)'
+      captures:
+        1: entity.name.tag
+      push:
+        - match: '#\w+'
+          scope: entity.name.tag
+        - match: '$'
+          pop: true
