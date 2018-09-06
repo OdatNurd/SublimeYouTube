@@ -26,6 +26,11 @@ the top to bottom process of creating a plugin in Sublime.
   determining where the tags and tag lines are in favour of duplicating the
   regular expressions needed.
 
+* [03](03) \[[Video][4]]: The usability of the plugin is enhanced by making it
+  easier to navigate within a notes files and select the tags that are moved to
+  the top.
+
 [1]: https://stackoverflow.com/questions/52060923/how-to-group-or-display-paragraphs-with-same-tag-with-sublime-text
 [2]: https://youtu.be/KN-EJ5JQ_fk
 [3]: https://youtu.be/_xhmN5-D_Ls
+[4]: https://youtu.be/_xhmN5-D_Ls
