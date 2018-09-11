@@ -1,0 +1,5 @@
+{
+    // Tags to inject into the completions list in notes files.
+    "custom_tags": [
+    ]
+}

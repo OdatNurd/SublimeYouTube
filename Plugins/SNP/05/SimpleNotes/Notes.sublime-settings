@@ -1,0 +1,7 @@
+// These settings override both User and Default settings for the Notes syntax
+{
+    "auto_complete_triggers":
+    [
+        {"characters": "#", "selector": "text.plain.notes"},
+    ],
+}

@@ -1,0 +1,37 @@
+[
+  { "id": "preferences",
+    "children": [
+      { "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          { "caption": "SimpleNotes",
+            "children": [
+              { "caption": "README",
+                "command": "open_file",
+                "args": {
+                  "target": "${packages}/SimpleNotes/README.md"
+                }
+              },
+              { "caption": "-" },
+              { "caption": "Settings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/SimpleNotes/SimpleNotes.sublime-settings",
+                  "default": "{\n\t$0\n}\n"
+                }
+              },
+              { "caption": "Key Bindings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/SimpleNotes/Default (${platform}).sublime-keymap",
+                  "default": "[\n\t$0\n]\n"
+                }
+              },
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

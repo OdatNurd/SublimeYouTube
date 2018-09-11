@@ -1,0 +1,22 @@
+[
+  { "caption": "Preferences: SimpleNotes",
+    "command": "edit_settings",
+    "args": {
+      "base_file": "${packages}/SimpleNotes/SimpleNotes.sublime-settings",
+      "default": "{\n\t$0\n}\n"
+    }
+  },
+  { "caption": "Preferences: SimpleNotes Key Bindings",
+    "command": "edit_settings",
+    "args": {
+      "base_file": "${packages}/SimpleNotes/Default (${platform}).sublime-keymap",
+      "default": "[\n\t$0\n]\n"
+    }
+  },
+  { "caption": "SimpleNotes: Open Readme",
+    "command": "open_file",
+    "args": {
+      "file": "${packages}/SimpleNotes/README.md"
+    }
+  },
+]

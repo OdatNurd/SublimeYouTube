@@ -1,0 +1,6 @@
+[
+    {
+        "keys": ["super+t"],
+        "command": "simple_notes_tag_to_top",
+    },
+]

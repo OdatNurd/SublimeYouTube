@@ -33,9 +33,14 @@ the top to bottom process of creating a plugin in Sublime.
 * [04](04) \[[Video][5]]: We add our own simple auto completion facility to the
   plugin to make it easier to create a notes file from scratch.
 
+* [05](05) \[[Video][6]]: We finish up our plugin by adding a settings file and
+  converting it into a full package, complete with integration with Sublime to
+  give a more professional appearance.
+
 
 [1]: https://stackoverflow.com/questions/52060923/how-to-group-or-display-paragraphs-with-same-tag-with-sublime-text
 [2]: https://youtu.be/KN-EJ5JQ_fk
 [3]: https://youtu.be/_xhmN5-D_Ls
 [4]: https://youtu.be/5ZZIssKXIcU
 [5]: https://youtu.be/pNs92C6Y3iI
+[6]: https://youtu.be/yTN-OLfYtHY

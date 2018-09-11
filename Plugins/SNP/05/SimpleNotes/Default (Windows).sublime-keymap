@@ -1,0 +1,6 @@
+[
+    {
+        "keys": ["ctrl+alt+t"],
+        "command": "simple_notes_tag_to_top",
+    },
+]
