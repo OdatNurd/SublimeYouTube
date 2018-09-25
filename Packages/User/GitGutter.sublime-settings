@@ -3,4 +3,8 @@
   // Live mode evaluates changes every time file is modified,
   // Set false to disable evaluation after each input
   "live_mode": false,
+
+  // Turn off a rather unfortunate default value for blame annotation
+  // viewing.
+  "show_line_annotation": "false",
 }
