@@ -2,8 +2,7 @@ Sublime Plugin Code
 -------------------
 
 This directory contains the code and other related package resources for all
-videos in the `Plugin Development` series of videos on the
-[YouTube channel](https://www.youtube.com/user/nurdz).
+videos on the [YouTube channel](https://www.youtube.com/user/nurdz).
 
 The directory structure is laid out similarly to the production codes that
 you'll find in the title of each video, allowing you to easily find exactly the
@@ -19,7 +18,13 @@ videos progress, particularly for those that want to pick and choose the videos
 that they watch.
 
 The code samples for videos will be added to the repository on the same day
-that the video drops.
+that the video drops (or thereabouts).
+
+### [Common Questions](CQ/)
+
+The files in this folder associate with the various Common Questions videos on
+the channel and generally relate to things like sample files that you may want
+to play with without having to manually transcribe them yourself.
 
 ### [Simple Notes Plugin](SNP/)
 
