@@ -15,5 +15,10 @@ typing them yourself. So, here we are!
   target in Sublime Text. This example just displays the arguments that would
   be passed to the target, to help visualize how the build command is executed.
 
+* [10](10) \[[Video][10]]: This video shows a simple way to use a custom build
+  target to run code and expand your own variables while still being able to
+  execute the build normally.
+
 
 [8]: https://youtu.be/EnQPMsUCCD0
+[10]: https://youtu.be/IUECC7IvsUY
