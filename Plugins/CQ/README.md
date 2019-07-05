@@ -16,9 +16,14 @@ typing them yourself. So, here we are!
   be passed to the target, to help visualize how the build command is executed.
 
 * [10](10) \[[Video][10]]: This video shows a simple way to use a custom build
-  target to run code and expand your own variables while still being able to
+  `target` to run code and expand your own variables while still being able to
   execute the build normally.
+
+* [11](11) \[[Video][11]]: This video extends the custom build target from the
+  previous video so that it can be used in the `cancel` key of a build file to
+  cancel a build without also prompting you to cancel the build.
 
 
 [8]: https://youtu.be/EnQPMsUCCD0
 [10]: https://youtu.be/IUECC7IvsUY
+[11]: https://youtu.be/tOi5MrhVAiI
