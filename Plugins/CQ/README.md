@@ -23,7 +23,13 @@ typing them yourself. So, here we are!
   previous video so that it can be used in the `cancel` key of a build file to
   cancel a build without also prompting you to cancel the build.
 
+* [12](12) \[[Video][12]]: This video shows a more advanced way to create a
+  custom build `target` that allows you to detect when a build is finished or
+  being cancelled. We can also now enable or disable the cancel command in the
+  menu appropriately!
+
 
 [8]: https://youtu.be/EnQPMsUCCD0
 [10]: https://youtu.be/IUECC7IvsUY
 [11]: https://youtu.be/tOi5MrhVAiI
+[12]: https://youtu.be/1B7XSHQgTKk
