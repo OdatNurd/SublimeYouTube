@@ -28,8 +28,13 @@ typing them yourself. So, here we are!
   being cancelled. We can also now enable or disable the cancel command in the
   menu appropriately!
 
+* [13](13) \[[Video][13]]: This video includes three custom build targets that
+  show some real world examples of custom build targets. This shows how to
+  temporarily disable showing build results and two methods for using the
+  currently selected text in your build system.
 
 [8]: https://youtu.be/EnQPMsUCCD0
 [10]: https://youtu.be/IUECC7IvsUY
 [11]: https://youtu.be/tOi5MrhVAiI
 [12]: https://youtu.be/1B7XSHQgTKk
+[13]: https://youtu.be/WxiMlhOX_Ng
