@@ -1,4 +1,6 @@
 [
+    { "caption": "STealthy-and-haSTy GitHub Organization", "command": "open_url", "args": {"url": "https://github.com/STealthy-and-haSTy"}},
+    
     { "caption": "Developer: New Plugin...",      "command": "new_plugin"},
     { "caption": "Developer: New Snippet...",     "command": "new_snippet"},
     { "caption": "Developer: New Syntax...",      "command": "new_syntax"},

@@ -9,6 +9,13 @@
         }
     },
 
+    // Close a terminus view using the standard close keyboard shortcut.
+    {
+        "keys": ["ctrl+w"],
+        "command": "terminus_close",
+        "context": [{ "key": "terminus_view"}]
+    },
+
     // Open the Command Palette focused on OverrideAudit commands
     {
         "keys": ["ctrl+alt+o"],
@@ -58,6 +65,10 @@
             { "key": "selection_empty", "operator": "equal", "operand": "true", "match_all": true }
         ]
     },
+
+    // Mimic on windows the key binding for opening the switch project panel
+    // as it appears on Linux,
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace", },
 
     ///////////////////
     // These key bindings apply to comments and will continue them onto the next

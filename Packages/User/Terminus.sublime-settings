@@ -1,0 +1,48 @@
+{
+	"theme": "solarized-dark-higher-contrast",
+    // a list of available shells to execute
+    // the shell marked as "default" will the default shell
+    "shell_configs": [
+        {
+            "name": "Bash",
+            "cmd": ["bash", "-i", "-l"],
+            "env": {},
+            "enable": true,
+            "default": false,
+            "platforms": ["linux", "osx"]
+        },
+        {
+            "name": "Zsh",
+            "cmd": ["zsh", "-i", "-l"],
+            "env": {},
+            "enable": false,
+            "default": false,
+            "platforms": ["linux", "osx"]
+        },
+        {
+            "name": "Command Prompt",
+            "cmd": "cmd.exe",
+            "env": {},
+            "enable": true,
+            "default": true,
+            "platforms": ["windows"]
+        },
+        {
+            "name": "Power Shell",
+            "cmd": "pwsh.exe",
+            "env": {},
+            "enable": true,
+            "default": false,
+            "platforms": ["windows"]
+        },
+        {
+            "name": "WSL Login Shell",
+            "cmd": "wsl.exe",
+            "env": {},
+            "enable": false,
+            "default": false,
+            "platforms": ["windows"]
+        }
+    ],
+
+}

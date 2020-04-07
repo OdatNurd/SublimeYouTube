@@ -1,0 +1,33 @@
+{
+    "globals":
+    {
+        "line_diff_added": "var(yellow2)",
+        "line_diff_modified": "var(blue)",
+        "line_diff_deleted": "var(red)",
+        "line_diff_width": "5"
+    },
+    "rules":
+    [
+        // For custom coloring of hyperhelp constructs
+        {
+            "name": "HyperHelp Anchor Punctuation",
+            "scope": "text.hyperhelp.help punctuation.anchor",
+            "foreground": "color(var(yellow) alpha(0.67))"
+        },
+        {
+            "name": "HyperHelp Code Fence Punctuation",
+            "scope": "text.hyperhelp.help punctuation.definition.code-fence",
+            "foreground": "color(var(white) alpha(0.33))",
+        },
+        {
+            "name": "HyperHelp Code Fence Language Name",
+            "scope": "text.hyperhelp.help constant.other.language-name",
+            "foreground": "color(var(purple) alpha(0.33))",
+        },
+        {
+            "name": "HyperHelp Inline Code Block Punctuation",
+            "scope": "text.hyperhelp.help punctuation.definition.raw",
+            "foreground": "color(var(white) alpha(0.33))"
+        },
+    ]
+}

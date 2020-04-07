@@ -1,31 +1,34 @@
 {
-    "auto_complete_commit_on_tab": true,
-    "auto_complete_with_fields": true,
-    "drag_text": false,
-    "ensure_newline_at_eof_on_save": true,
-    "font_face": "Source Code Pro Medium",
-    "font_size": 13,
-    "highlight_line": true,
-    "highlight_modified_tabs": true,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "indent_guide_options":
-    [
-        "draw_normal",
-        "draw_active"
-    ],
-    "move_to_limit_on_up_down": true,
-    "rulers":
-    [
-        80
-    ],
-    "show_encoding": true,
-    "theme": "Adaptive.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "update_check": false,
-    "word_wrap": "auto",
-    "wrap_width": 110
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"caret_style": "solid",
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"drag_text": false,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Iosevka SS09",
+	"font_size": 8,
+	"git_diff_target": "head",
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"move_to_limit_on_up_down": true,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		80
+	],
+	"show_encoding": true,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": "auto",
+	"wrap_width": 110
 }
